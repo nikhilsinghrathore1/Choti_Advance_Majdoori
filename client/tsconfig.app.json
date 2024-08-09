@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "node", // Changed from "bundler" to "node"
+    "allowImportingTsExtensions": false, // Set to false unless you need this specific feature
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx", // For React 17 and newer
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}
