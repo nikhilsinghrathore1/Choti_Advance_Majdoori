@@ -1,0 +1,81 @@
+@font-face {
+  font-family: font1;
+  src: url("/circular-std-medium-500.ttf");
+}
+@font-face {
+  font-family: font2;
+  src: url("/CircularStd-Book.ttf");
+}
+
+
+
+.f1{
+  font-family: font1;
+}
+.f2{
+  font-family: font2;
+}
+
+.text-h1{
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.4);
+  transition: color 0.25s ease , opacity 0.25s ease;
+}
+
+.active-h1{
+  font-size: 1.6rem;
+  transition: all 1s ease-out;
+  color: #fff;
+  opacity: 1;
+}
+
+.path{
+  clip-path: polygon(85% 0% , 0% 0% , 0% 50%, 85% 50%);
+  transition: clip-path 1s cubic-bezier(0.075,0.82,0.165,1);
+}
+.pathB{
+  clip-path: polygon(100% 50% , 15% 50% , 15% 100%, 100% 100%);
+  transition: clip-path 1s cubic-bezier(0.075,0.82,0.165,1);
+}
+
+
+/* Ensure .slide-images is positioned correctly */
+.slide-images {
+  position: relative;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: clip-path 1s cubic-bezier(0.075,0.82,0.165,1); /* Smooth transition */
+}
+
+/* Hover effect for .img_top */
+.slide-images:hover .img_top {
+  clip-path: polygon(90% 0%, 10% 0%, 10% 50%, 90% 50%);
+}
+
+/* Hover effect for .img_bottom */
+.slide-images:hover .img_bottom {
+  clip-path: polygon(90% 50%, 10% 50%, 10% 100%, 90% 100%);
+}
+
+/* Ensure the clip-path transition works smoothly */
+.path {
+  clip-path: polygon(85% 0%, 0% 0%, 0% 50%, 85% 50%);
+  transition: clip-path 1s cubic-bezier(0.075,0.82,0.165,1); /* Smooth transition */
+}
+.pathB {
+  clip-path: polygon(100% 50%, 15% 50%, 15% 100%, 100% 100%);
+  transition: clip-path 1s cubic-bezier(0.075,0.82,0.165,1); /* Smooth transition */
+}
+
+.transi{
+  transition: all 5s ease-out;
+}
