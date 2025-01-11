@@ -66,6 +66,20 @@ exports.router.get("/room/:roomid", (req, res) => __awaiter(void 0, void 0, void
         });
     }
 }));
+exports.router.post("/enterContent", (req, res) => {
+    const payload = req.body;
+    console.log(payload);
+    try {
+        const updatedContent = (0, RoomController_1.updateTextRoomValue)(payload);
+        res.status(200).json({
+            msg: "the text content was updated",
+            updatedContent,
+        });
+    }
+    catch (err) {
+        console.log(err);
+    }
+});
 exports.router.post("/create_room_files", (req, res) => {
     res.status(200).json({
         msg: "files room created "

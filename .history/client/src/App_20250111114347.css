@@ -18,7 +18,7 @@
 
 .text-h1{
   align-items: center;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   color: rgba(255,255,255,0.4);
   transition: color 0.25s ease , opacity 0.25s ease;

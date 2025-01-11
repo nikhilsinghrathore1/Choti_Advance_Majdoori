@@ -48,3 +48,6 @@ export default tseslint.config({
   },
 })
 ```
+
+
+<!-- okay so i have setup the react hook form now i just have to send a request from the frontend to the backend  -->

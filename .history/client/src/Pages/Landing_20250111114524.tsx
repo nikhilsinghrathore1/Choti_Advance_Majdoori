@@ -190,7 +190,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className='absolute  z-50 cursor-pointer bottom-8 f2 text-sm flex items-center justify-center left-[50%] w-32 h-12 shadow-lg border border-white/10 rounded-full -translate-x-[50%]'>
+      <div className='absolute bg-red-400 z-50 cursor-pointer bottom-8 f2 text-sm flex items-center justify-center left-[50%] w-32 h-12 shadow-lg border border-white/10 rounded-full -translate-x-[50%]'>
         <p className='opacity-70 tracking-tight'>Create Room</p>
       </div>
     </div>

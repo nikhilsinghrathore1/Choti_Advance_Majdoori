@@ -9,18 +9,29 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.FindRoom = exports.createRoom = void 0;
+exports.FindRoom = exports.updateTextRoomValue = exports.createRoom = void 0;
 const client_1 = require("@prisma/client");
 const prisma = new client_1.PrismaClient();
 const createRoom = (payload) => __awaiter(void 0, void 0, void 0, function* () {
     return prisma.room.create({
         data: {
-            password: payload.password,
-            content: payload.content
+            password: payload.roomId,
         }
     });
 });
 exports.createRoom = createRoom;
+const updateTextRoomValue = (payload) => __awaiter(void 0, void 0, void 0, function* () {
+    const id = parseInt(payload.id, 10); // Convert id to a number
+    return prisma.room.update({
+        where: {
+            id: id, // Use the converted number
+        },
+        data: {
+            content: payload.content,
+        },
+    });
+});
+exports.updateTextRoomValue = updateTextRoomValue;
 const FindRoom = (roomId) => __awaiter(void 0, void 0, void 0, function* () {
     return prisma.room.findUnique({
         where: {

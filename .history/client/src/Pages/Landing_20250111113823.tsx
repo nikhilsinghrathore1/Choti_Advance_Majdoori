@@ -164,7 +164,7 @@ const Landing = () => {
         <p>Explore more</p>
       </nav>
 
-      <footer className='fixed bottom-0 font-light capitalize text-[11px] opacity-70 p-[2em] w-full flex justify-between items-center z-20'>
+      <footer className='fixed bottom-0 font-light capitalize text-[13px] opacity-70 p-[2em] w-full flex justify-between items-center z-20'>
         <div className='flex gap-20'>
           <a href="#">Instagram</a>
           <a href="#">Gmail</a>
@@ -190,7 +190,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className='absolute  z-50 cursor-pointer bottom-8 f2 text-sm flex items-center justify-center left-[50%] w-32 h-12 shadow-lg border border-white/10 rounded-full -translate-x-[50%]'>
+      <div className='absolute z-50 cursor-pointer bottom-8 f2 text-xl flex items-center justify-center left-[50%] w-44 h-12 shadow-lg rounded-full -translate-x-[50%]'>
         <p className='opacity-70 tracking-tight'>Create Room</p>
       </div>
     </div>
